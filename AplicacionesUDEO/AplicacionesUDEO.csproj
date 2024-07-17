@@ -155,7 +155,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="CRUD.aspx" />
     <Content Include="css\CalcStyle.css" />
-    <Content Include="css\ClientStyle.css" />
+    <Content Include="css\CRUDStyle.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
