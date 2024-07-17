@@ -1,0 +1,128 @@
+﻿body {
+    background-image: url('../img/GRISred2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.estiloTabla {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 30%;
+}
+
+.txtCalc {
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
+
+.clock {
+    background-image: url('../img/ICONrecent.png');
+}
+
+.alinD {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.alinI {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.D_line{
+    background-color:black;
+}
+
+
+.M_boton {
+    background-color: black;
+    border-radius: 5px;
+    margin: auto;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+    color: #887676;
+    font-weight: 700;
+    padding: 5% 12%;
+}
+
+.alinC{
+    text-align: center;
+}
+
+.tamanioCelda{
+    padding: 20px;
+}
+
+.txtBox {
+    background-color: black;
+    text-align: right;
+    width: 99%;
+    color: white;
+    font-size: 50px;
+    padding: 0px 5px 0 0 ;
+    border: none;
+    outline: none;
+}
+
+.teclaOscura {
+    /*background-color: #1c1c1f;*/
+    background-color: #1c1c1f;
+    border-radius: 5px;
+    margin: auto;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 5% 12%;
+}
+
+.teclaClara {
+    background-color: #3a2d33;
+    border-radius: 5px;
+    margin: auto;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 5% 12%;
+}
+
+.teclaResalta {
+    background-color: #ffa89a;
+    border-radius: 5px;
+    margin: auto;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 5% 12%;
+}
+
+.teclaAjustada {
+    background-color: red;
+    border-radius: 5px;
+    margin: auto;
+    width: 15%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    /*padding: 22px 2px 24px 2px;*/
+    padding: 5% 12% 5% 12%;
+    
+}
+

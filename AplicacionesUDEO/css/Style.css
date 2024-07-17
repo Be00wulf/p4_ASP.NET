@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url('../img/GRISmix.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*ESTILOS DEL MENÚ*/
+.botonMenu {
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: 'Yu Gothic UI';
+    border: none;
+    background-color: #ece18d;
+}
+
+.estiloTabla {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alineaCentro {
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+﻿body {
+    background-image: url('../img/GRISblue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.estiloTabla {
+    width: 80%;
+    border-radius: 30px;
+    /*background-color: aqua;*/
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.alinD {
+    text-align: right;
+    color: orangered;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.estilotxtBox {
+    border-radius: 5px;
+    width: 90%;
+    padding: 7px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+.h1 {
+    text-align: center;
+    color: purple;
+    font-size: 25px;
+}
+
+.alineaCentro {
+    text-align: center;
+    width: 33%;
+}
+
+.boton {
+    border-radius: 5px;
+    margin: auto;
+    width: 70%;
+    padding: 10px 0;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.botonGuardar {
+    background-color: forestgreen;
+}
+
+.botonEditar {
+    background-color: blue;
+}
+
+.botonEliminar {
+    background-color: red;
+}
+
+.estiloGrid {
+    margin: 15px auto;
+    width: 82%;
+    border-radius: 20px;
+    background-color: black;
+}
