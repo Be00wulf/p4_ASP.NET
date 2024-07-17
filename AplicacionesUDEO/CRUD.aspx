@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>CONTROL DE INGRESO</title>
-    <link href="css/ClientStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/CRUDStyle.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="img/CLIENTE.png" />
         <style type="text/css">
             .auto-style1 {

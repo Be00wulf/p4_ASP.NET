@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>CALCULADORA</title>
     <link rel="icon" href="img/calculadora.png" />
-    <link href="css/CalcStyle.css" rel="stylesheet" type="text/css";
+    <link href="css/CalcStyle.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
 
     </style>

@@ -31,6 +31,9 @@ namespace AplicacionesUDEO
                 //JS
 
                 //txtOPERACION.Text = "0";
+                //https://learn.microsoft.com/es-es/dotnet/api/system.web.ui.control.viewstate?view=netframework-4.8.1
+                //https://stackoverflow.com/questions/2883149/viewstate-vs-session-maintaining-object-through-page-lifecycle
+                //ViewState[] para datos dentro de una pagina y  Session[] para datos que necesitan ser accesibles para multiples paginas
 
                 txtOPERACION.Text = "0";
                 ViewState["valor1"] = 0.0;
