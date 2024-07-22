@@ -24,6 +24,8 @@
 }
 
 .estilotxtBox {
+    background-color: black;
+    color: white;
     border-radius: 5px;
     width: 90%;
     padding: 7px;
@@ -45,14 +47,18 @@
 }
 
 .boton {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
     border-radius: 5px;
-    margin: auto;
     width: 70%;
     padding: 10px 0;
     font-size: 20px;
-    border: none;
     color: white;
     font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 
 .botonGuardar {

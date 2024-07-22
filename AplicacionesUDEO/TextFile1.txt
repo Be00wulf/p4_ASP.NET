@@ -1,4 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="AplicacionesUDEO.CRUD" %>
+﻿EJERCICIO EN CLASE
+
+//TXT
+PRODUCTOS
+Código, Producto, Precio de compra, Precio de venta, Existencia
+3312, Mouse, Q75, Q100, Si
+2604, Monitor, Q1500, Q1700, No
+0707, Tablet, Q2800, Q3000, Si
+
+
+
+
+//ASPX
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="AplicacionesUDEO.CRUD" %>
 
 <!DOCTYPE html>
 
@@ -11,12 +24,12 @@
         <style type="text/css">
             
             .auto-style2 {
-                width: 25%;
+                width: 18%;
                 text-align: right;
             }
 
             .auto-style3 {
-                width: 25%;
+                width: 18%;
                 border-radius: 30px;
                 /*background-color: aqua;*/
                 margin: auto;
@@ -31,62 +44,41 @@
 
 <body>
     <form id="form1" runat="server">
-        <h1>DATOS DEL CLIENTE</h1>
+        <h1>CONTROL DE CLIENTES</h1>
         <div>
             <table class="estiloTabla" >
                 <tr>
-                    <td class="auto-style3" >NIT </td>
+                    <td class="auto-style3" >Codigo</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxNit" runat="server" class="estilotxtBox" ></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCodigo" runat="server" class="estilotxtBox" ></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="auto-style2">NOMBRES: </td>
+                    <td class="auto-style2">Producto</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxNombres" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxProducto" runat="server" CssClass="estilotxtBox"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="auto-style2">APELLIDOS: </td>
+                    <td class="auto-style2">Precio de compra</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxApellidos" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPrecioCompra" runat="server" CssClass="estilotxtBox"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="auto-style2">DIRECCIÓN: </td>
+                    <td class="auto-style2">Precio de venta</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxDireccion" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPrecioVenta" runat="server" CssClass="estilotxtBox"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="auto-style2">TELÉFONO: </td>
+                    <td class="auto-style2">Existencia</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxTelefono" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="auto-style2">FECHA DE NACIMIENTO: </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxFechaNacimiento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    </td>
-                </tr>
-
-                                <tr>
-                <td class="auto-style2">DEPARTAMENTO: </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxDepartamento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="auto-style2">MUNICIPIO: </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxMunicipio" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxExistencia" runat="server" CssClass="estilotxtBox"></asp:TextBox>
                     </td>
                 </tr>
             </table>
