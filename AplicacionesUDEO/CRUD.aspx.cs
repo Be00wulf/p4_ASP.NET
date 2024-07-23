@@ -27,7 +27,7 @@ namespace AplicacionesUDEO
             tablaProducto.Columns.Add("MUNICIPIO");
             bool bandera = false;
 
-            StreamReader leer = new StreamReader(Server.MapPath("archivos/datos1.txt"));
+            StreamReader leer = new StreamReader(Server.MapPath("archivos/datos4.txt"));
 
             //definiendo columnas de separacion de TIPOS DE datos ingresados
             while (!leer.EndOfStream) { 
@@ -73,7 +73,7 @@ namespace AplicacionesUDEO
 
                 //agregar datos al archivo txt
                 string linea = TextBoxNit.Text + "," + TextBoxNombres.Text + "," + TextBoxApellidos.Text + "," + TextBoxDireccion.Text + "," + TextBoxTelefono.Text + "," + TextBoxFechaNacimiento.Text + "," + TextBoxDepartamento.Text + "," + TextBoxMunicipio.Text;
-                StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
+                StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos4.txt"), true);
                 escribir.WriteLine(linea);
                 escribir.Close();
                 Response.Write("<script language=javascript>alert('Se ha ingresado el cliente exitosamente')</script>");
@@ -102,13 +102,14 @@ namespace AplicacionesUDEO
                     fila[7] = TextBoxMunicipio.Text;
                     Response.Write("<script language=javascript>alert('Informacion actualizada exitosamente')</script>");
                     GridView1.DataBind();
-                    limpiar();
+                    //Flimpiar();
                     break;
                 }
+                
             }
             //actualizando datos en el txt
             //new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
-            StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
+            StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos4.txt"), true);
 
             foreach (DataRow fila in tablaProducto.Rows)
             {
@@ -142,7 +143,7 @@ namespace AplicacionesUDEO
             }
             //actualizando datos en el txt
             //new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
-            StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
+            StreamWriter escribir = new StreamWriter(Server.MapPath("archivos/datos4.txt"), true);
 
             foreach (DataRow fila in tablaProducto.Rows)
             {

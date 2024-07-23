@@ -48,7 +48,7 @@
 
 .boton {
     border-style: none;
-    border-color: inherit;
+    /*border-color: inherit;*/
     border-width: medium;
     border-radius: 5px;
     width: 70%;
