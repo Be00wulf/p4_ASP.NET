@@ -135,6 +135,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="archivos\datos4.txt" />
+    <Content Include="archivos\Departamento.txt" />
+    <Content Include="archivos\Municipio.txt" />
     <Content Include="Calculator.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />

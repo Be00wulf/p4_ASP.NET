@@ -12,7 +12,10 @@ namespace AplicacionesUDEO
     public partial class CRUD : System.Web.UI.Page
     {
         DataTable tablaProducto = new DataTable();
-            //ViewState     Session
+        //ViewState     Session
+
+        DataTable tablaDepa = new DataTable();
+        DataTable tablaMUnic = new DataTable();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,7 +33,7 @@ namespace AplicacionesUDEO
             StreamReader leer = new StreamReader(Server.MapPath("archivos/datos4.txt"));
 
             //definiendo columnas de separacion de TIPOS DE datos ingresados
-            while (!leer.EndOfStream) { 
+            while (!leer.EndOfStream) {
                 string linea = leer.ReadLine();
                 string[] aux = linea.Split(',');
                 tablaProducto.Rows.Add(aux);
@@ -41,6 +44,48 @@ namespace AplicacionesUDEO
             GUARDAR.Enabled = true;
             ELIMINAR.Enabled = true;
 
+        }
+
+        public void CargarDepa()
+        {
+            tablaDepa.Columns.Add("Codigo");
+            tablaDepa.Columns.Add("Depa");
+            StreamReader leer = new StreamReader(Server.MapPath("archivos/Departamento.txt"));
+
+            while (!leer.EndOfStream)
+            {
+                string linea = leer.ReadLine();
+                string[] aux = linea.Split(',');
+                tablaDepa.Rows.Add(aux);
+            }
+            leer.Close() ;
+            DropDownList1Depa.DataSource = tablaDepa;
+            DropDownList2Munic.DataTextField = "Depa";
+            DropDownList2Munic.DataValueField = "Codigo";
+            DropDownList1Depa.DataBind();
+        }
+
+        public void CargarMunic()
+        {
+            tablaMUnic.Columns.Clear();
+            tablaMUnic.Rows.Clear();
+            tablaMUnic.Columns.Add("CodMuni");
+            tablaMUnic.Columns.Add("Munic");
+            tablaMUnic.Columns.Add("CodDepa");
+
+            StreamReader leer = new StreamReader(Server.MapPath("archivos/Municipio.txt"));
+
+            while (!leer.EndOfStream)
+            {
+                string linea = leer.ReadLine();
+                string[] aux = linea.Split(',');
+                tablaDepa.Rows.Add(aux);
+            }
+            leer.Close();
+            DropDownList1Depa.DataSource = tablaDepa;
+            DropDownList2Munic.DataTextField = "Munic";
+            DropDownList2Munic.DataValueField = "Codigo";
+            DropDownList1Depa.DataBind();
         }
 
         //Limpiando los campos al terminar de arreglar

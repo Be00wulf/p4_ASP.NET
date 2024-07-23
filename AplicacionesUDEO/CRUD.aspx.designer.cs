@@ -87,6 +87,15 @@ namespace AplicacionesUDEO
         protected global::System.Web.UI.WebControls.TextBox TextBoxDepartamento;
 
         /// <summary>
+        /// Control DropDownList1Depa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1Depa;
+
+        /// <summary>
         /// Control TextBoxMunicipio.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,15 @@ namespace AplicacionesUDEO
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxMunicipio;
+
+        /// <summary>
+        /// Control DropDownList2Munic.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2Munic;
 
         /// <summary>
         /// Control GUARDAR.

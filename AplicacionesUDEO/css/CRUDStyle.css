@@ -63,6 +63,7 @@
 
 .botonGuardar {
     background-color: #096db5;
+    text-align: center;
 }
 
 .botonEditar {
@@ -78,4 +79,15 @@
     width: 82%;
     border-radius: 20px;
     background-color: black;
+}
+
+.botonBuscar {
+    background-color: #2F4F4F;
+}
+
+.alinI {
+    text-align: left;
+    color: orangered;
+    font-size: 15px;
+    font-weight: 750;
 }

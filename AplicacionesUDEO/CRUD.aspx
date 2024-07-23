@@ -26,12 +26,21 @@
             .auto-style4 {
                 width: 335px;
             }
+            .auto-style5 {
+                width: 25%;
+                text-align: right;
+                height: 61px;
+            }
+            .auto-style6 {
+                width: 335px;
+                height: 61px;
+            }
         </style>
 </head>
 
 <body>
-    <form id="form1" runat="server">
-        <h1>DATOS DEL CLIENTE</h1>
+    <form id="form1" runat="server" >
+        <h1 class="alineaCentro">DATOS DEL CLIENTE</h1>
         <div>
             <table class="estiloTabla" >
                 <tr>
@@ -56,8 +65,8 @@
                 </tr>
 
                 <tr>
-                    <td class="auto-style2">DIRECCIÓN: </td>
-                    <td class="auto-style4">
+                    <td class="auto-style5">DIRECCIÓN: </td>
+                    <td class="auto-style6">
                         <asp:TextBox ID="TextBoxDireccion" runat="server" CssClass="estilotxtBox"></asp:TextBox>
                     </td>
                 </tr>
@@ -80,6 +89,8 @@
                 <td class="auto-style2">DEPARTAMENTO: </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="TextBoxDepartamento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                    &nbsp;<asp:DropDownList ID="DropDownList1Depa" runat="server"  >
+                        </asp:DropDownList>
                     </td>
                 </tr>
 
@@ -87,6 +98,8 @@
                     <td class="auto-style2">MUNICIPIO: </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="TextBoxMunicipio" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                    &nbsp;<asp:DropDownList ID="DropDownList2Munic" runat="server" >
+                        </asp:DropDownList>
                     </td>
                 </tr>
             </table>
@@ -97,10 +110,10 @@
                 <tr>
                     <td class="alineaCentro" ><asp:Button ID="GUARDAR" CssClass="boton botonGuardar" runat="server" Text="GUARDAR" OnClick="GUARDAR_Click" />
                     </td>
-                    <td>
+                    <td class="alineaCentro" >
                         <asp:Button ID="EDITAR" CssClass="boton botonEditar" runat="server" Text="EDITAR" OnClick="EDITAR_Click" />
                     </td>
-                    <td>
+                    <td class="alinD" >
                         <asp:Button ID="ELIMINAR" CssClass="boton botonEliminar" runat="server" Text="ELIMINAR" OnClick="ELIMINAR_Click" />
                     </td>
                 </tr>
@@ -110,13 +123,13 @@
 
             <table class="estiloTabla">
                 <tr>
-                    <td>
-                        <asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                    <td class="alinD">
+                        <asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox "></asp:TextBox>
 
-                    </td>
+                    </t>
 
-                    <td>
-                        <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonGuardar" Text="BUSCAR" OnClick="ButtonBuscar_Click" />
+                    <td class="alinD">
+                        <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonBuscar" Text="BUSCAR" OnClick="ButtonBuscar_Click" />
 
                     </td>
 
