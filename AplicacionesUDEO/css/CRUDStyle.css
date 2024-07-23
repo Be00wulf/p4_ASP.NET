@@ -62,15 +62,15 @@
 }
 
 .botonGuardar {
-    background-color: forestgreen;
+    background-color: #096db5;
 }
 
 .botonEditar {
-    background-color: blue;
+    background-color: #096db5;
 }
 
 .botonEliminar {
-    background-color: red;
+    background-color: #096db5;
 }
 
 .estiloGrid {

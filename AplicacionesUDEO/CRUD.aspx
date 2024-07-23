@@ -111,12 +111,12 @@
             <table class="estiloTabla">
                 <tr>
                     <td>
-                        <asp:TextBox ID="TextBoxBuscar" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox"></asp:TextBox>
 
                     </td>
 
                     <td>
-                        <asp:Button ID="ButtonBuscar" runat="server" Text="Button" />
+                        <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonGuardar" Text="BUSCAR" OnClick="ButtonBuscar_Click" />
 
                     </td>
 
