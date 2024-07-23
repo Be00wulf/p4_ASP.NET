@@ -141,6 +141,15 @@ namespace AplicacionesUDEO
         protected global::System.Web.UI.WebControls.Button ELIMINAR;
 
         /// <summary>
+        /// Control ButtonBuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonBuscar;
+
+        /// <summary>
         /// Control TextBoxBuscar.
         /// </summary>
         /// <remarks>
@@ -150,13 +159,13 @@ namespace AplicacionesUDEO
         protected global::System.Web.UI.WebControls.TextBox TextBoxBuscar;
 
         /// <summary>
-        /// Control ButtonBuscar.
+        /// Control ButtonLimpiar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonBuscar;
+        protected global::System.Web.UI.WebControls.Button ButtonLimpiar;
 
         /// <summary>
         /// Control GridView1.

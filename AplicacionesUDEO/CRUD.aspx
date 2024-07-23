@@ -13,6 +13,7 @@
             .auto-style2 {
                 width: 25%;
                 text-align: right;
+                font-size: 20px;
             }
 
             .auto-style3 {
@@ -46,50 +47,50 @@
                 <tr>
                     <td class="auto-style3" >NIT </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxNit" runat="server" class="estilotxtBox" ></asp:TextBox>
+                        <asp:TextBox ID="TextBoxNit" runat="server" class="estilotxtBox" placeholder="Ej: 1725831-4"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="auto-style2">NOMBRES: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxNombres" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxNombres" runat="server" CssClass="estilotxtBox" placeholder="Ej: Linda Rosa"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="auto-style2">APELLIDOS: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxApellidos" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxApellidos" runat="server" CssClass="estilotxtBox" placeholder="Ej: Ramos Flores"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="auto-style5">DIRECCIÓN: </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TextBoxDireccion" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxDireccion" runat="server" CssClass="estilotxtBox" placeholder="Ej: 8va. calle 33-88 zona 1"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="auto-style2">TELÉFONO: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxTelefono" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxTelefono" runat="server" CssClass="estilotxtBox" placeholder="Ej: 77681213"></asp:TextBox>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="auto-style2">FECHA DE NACIMIENTO: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxFechaNacimiento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxFechaNacimiento" runat="server" CssClass="estilotxtBox" placeholder="Ej: 01/01/2000"></asp:TextBox>
                     </td>
                 </tr>
 
                                 <tr>
                 <td class="auto-style2">DEPARTAMENTO: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxDepartamento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    &nbsp;<asp:DropDownList ID="DropDownList1Depa" runat="server" OnSelectedIndexChanged="DropDownList1Depa_SelectedIndexChanged"  >
+                        <asp:TextBox ID="TextBoxDepartamento" runat="server" CssClass="estilotxtBox" Enabled="False"></asp:TextBox>
+                    &nbsp;<asp:DropDownList ID="DropDownList1Depa" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1Depa_SelectedIndexChanged"  >
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -97,10 +98,10 @@
                 <tr>
                     <td class="auto-style2">MUNICIPIO: </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBoxMunicipio" runat="server" CssClass="estilotxtBox"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxMunicipio" runat="server" CssClass="estilotxtBox" Enabled="False"></asp:TextBox>
           
                         
-                        <asp:DropDownList ID="DropDownList2Munic" runat="server">
+                        <asp:DropDownList ID="DropDownList2Munic" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2Munic_SelectedIndexChanged">
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -113,10 +114,10 @@
                     <td class="alineaCentro" ><asp:Button ID="GUARDAR" CssClass="boton botonGuardar" runat="server" Text="GUARDAR" OnClick="GUARDAR_Click" />
                     </td>
                     <td class="alineaCentro" >
-                        <asp:Button ID="EDITAR" CssClass="boton botonEditar" runat="server" Text="EDITAR" OnClick="EDITAR_Click" />
+                        <asp:Button ID="EDITAR" CssClass="boton botonEditar" runat="server" Text="EDITAR" OnClick="EDITAR_Click" Enabled="False" />
                     </td>
                     <td class="alinD" >
-                        <asp:Button ID="ELIMINAR" CssClass="boton botonEliminar" runat="server" Text="ELIMINAR" OnClick="ELIMINAR_Click" />
+                        <asp:Button ID="ELIMINAR" CssClass="boton botonEliminar" runat="server" Text="ELIMINAR" OnClick="ELIMINAR_Click" Enabled="False" />
                     </td>
                 </tr>
             </table>
@@ -125,16 +126,17 @@
 
             <table class="estiloTabla">
                 <tr>
-                    <td class="alinD">
-                        <asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox "></asp:TextBox>
+                    <td class="alineaCentro">
+                        <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonBuscar" Text="BUSCAR NIT" OnClick="ButtonBuscar_Click" />
+                        &nbsp;<asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBoxBuscar " placeholder="Ingresar NIT" ></asp:TextBox>
 
                     </td>
+                </tr>
 
+                <tr>
                     <td class="alinD">
-                        <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonBuscar" Text="BUSCAR" OnClick="ButtonBuscar_Click" />
-
+                        &nbsp;<asp:Button ID="ButtonLimpiar" runat="server" CssClass="boton botonBuscar" Text="LIMPIAR CAMPOS" OnClick="ButtonLimpiar_Click"  />
                     </td>
-
                 </tr>
 
                 <tr>

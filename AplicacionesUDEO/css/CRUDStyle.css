@@ -61,6 +61,12 @@
     margin-top: auto;
 }
 
+.boton:disabled{
+    background-color: #ADD8E6;
+    color: black;
+    cursor: not-allowed;
+}
+
 .botonGuardar {
     background-color: #096db5;
     text-align: center;
@@ -83,6 +89,7 @@
 
 .botonBuscar {
     background-color: #2F4F4F;
+    width: 18%;
 }
 
 .alinI {
@@ -90,4 +97,16 @@
     color: orangered;
     font-size: 15px;
     font-weight: 750;
+}
+
+.estilotxtBoxBuscar {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    padding: 7px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
 }
