@@ -30,6 +30,9 @@ namespace AplicacionesUDEO
             tablaProducto.Columns.Add("MUNICIPIO");
             bool bandera = false;
 
+            CargarDepa();
+
+
             StreamReader leer = new StreamReader(Server.MapPath("archivos/datos4.txt"));
 
             //definiendo columnas de separacion de TIPOS DE datos ingresados
@@ -60,8 +63,8 @@ namespace AplicacionesUDEO
             }
             leer.Close() ;
             DropDownList1Depa.DataSource = tablaDepa;
-            DropDownList2Munic.DataTextField = "Depa";
-            DropDownList2Munic.DataValueField = "Codigo";
+            DropDownList1Depa.DataTextField = "Depa";
+            DropDownList1Depa.DataValueField = "Codigo";
             DropDownList1Depa.DataBind();
         }
 
@@ -221,6 +224,11 @@ namespace AplicacionesUDEO
                     break;
                 }
             }
+        }
+
+        protected void DropDownList1Depa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarMunic();
         }
     }
 }

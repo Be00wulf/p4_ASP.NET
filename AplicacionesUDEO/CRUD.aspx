@@ -89,7 +89,7 @@
                 <td class="auto-style2">DEPARTAMENTO: </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="TextBoxDepartamento" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    &nbsp;<asp:DropDownList ID="DropDownList1Depa" runat="server"  >
+                    &nbsp;<asp:DropDownList ID="DropDownList1Depa" runat="server" OnSelectedIndexChanged="DropDownList1Depa_SelectedIndexChanged"  >
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -98,7 +98,9 @@
                     <td class="auto-style2">MUNICIPIO: </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="TextBoxMunicipio" runat="server" CssClass="estilotxtBox"></asp:TextBox>
-                    &nbsp;<asp:DropDownList ID="DropDownList2Munic" runat="server" >
+          
+                        
+                        <asp:DropDownList ID="DropDownList2Munic" runat="server">
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -126,7 +128,7 @@
                     <td class="alinD">
                         <asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox "></asp:TextBox>
 
-                    </t>
+                    </td>
 
                     <td class="alinD">
                         <asp:Button ID="ButtonBuscar" runat="server" CssClass="boton botonBuscar" Text="BUSCAR" OnClick="ButtonBuscar_Click" />
