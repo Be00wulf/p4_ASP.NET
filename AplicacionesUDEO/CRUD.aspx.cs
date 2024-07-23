@@ -31,6 +31,7 @@ namespace AplicacionesUDEO
             bool bandera = false;
 
             CargarDepa();
+            CargarMunic();
 
 
             StreamReader leer = new StreamReader(Server.MapPath("archivos/datos4.txt"));
@@ -82,13 +83,18 @@ namespace AplicacionesUDEO
             {
                 string linea = leer.ReadLine();
                 string[] aux = linea.Split(',');
-                tablaDepa.Rows.Add(aux);
+                if (DropDownList1Depa.SelectedValue == aux[2])
+                {
+                    tablaMUnic.Rows.Add(aux);
+                }
+
+                //tablaDepa.Rows.Add(aux);
             }
             leer.Close();
-            DropDownList1Depa.DataSource = tablaDepa;
+            DropDownList2Munic.DataSource = tablaMUnic;
             DropDownList2Munic.DataTextField = "Munic";
-            DropDownList2Munic.DataValueField = "Codigo";
-            DropDownList1Depa.DataBind();
+            DropDownList2Munic.DataValueField = "CodMuni";
+            DropDownList2Munic.DataBind();
         }
 
         //Limpiando los campos al terminar de arreglar
