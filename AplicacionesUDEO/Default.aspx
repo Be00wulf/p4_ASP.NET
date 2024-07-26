@@ -5,8 +5,9 @@
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
             <h1 id="aspnetTitle">HOLA PROBANDO ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+            <p class="lead">HAZ CLICK EN EL BOTON VERDE PARA INGRESAR AL MENU</p>
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+            <p><a href="Menu.aspx" class="btn btn-primary btn-md">MENÚ &raquo;</a></p>
         </section>
 
         <div class="row">

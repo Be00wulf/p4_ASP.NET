@@ -43,7 +43,7 @@
             </tr>
             <tr>
                 <td class="auto-style4">
-                    <asp:Button ID="RediElect" CssClass="botonMenu" runat="server" Text="IE1" />
+                    <asp:Button ID="RediElect" CssClass="botonMenu" runat="server" Text="IE1" OnClick="RediElect_Click" />
                 </td>
             </tr>
         </table>

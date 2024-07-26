@@ -1,0 +1,21 @@
+﻿body {
+    background-color: black;
+}
+
+.encabezado {
+    background-color: #AC1F2D;
+    width: 2% 100%;
+    text-align: center;
+}
+
+.imgEncabezado{
+    width: 15%;
+}
+
+.textoSimple{
+    color: white;
+}
+
+.textoResaltado {
+    color: #AC1F2D;
+}
